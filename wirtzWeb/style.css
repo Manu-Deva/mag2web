@@ -1,0 +1,465 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/************* NAV BAR **************/
+
+.nav-bar {
+  z-index: 1000;
+  background-color: black;
+  padding: 17px 10px 50px 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1vh;
+  transition-duration: 1s;
+}
+
+.logo {
+  display: inline;
+  align-items: center;
+  position: relative;
+}
+
+.logo-image {
+  grid-area: content;
+  float: left;
+  background-color: transparent;
+}
+
+.nav-bar a {
+  fill: white; /* only change this if nbn nav logo is on a dark background -- if so, change to white */
+  transition-duration: 1s;
+}
+
+.nav-bar a:hover {
+  fill: #ececec; /* only change this if nbn nav logo is on a dark background -- if so, change to #ECECEC */
+  transition-duration: 0s;
+}
+
+/* NAV BAR ON SCROLL */
+
+.nav-bar-scroll {
+  background-color: inverted;
+  filter: drop-shadow(0 1px 1px rgb(0, 0, 0, 0.5));
+}
+
+/************* HEADER (HED, DEK, BYLINE) **************/
+
+.article-top-content {
+  margin-top: 10vh;
+  padding-left: 30%;
+  padding-right: 30%;
+  text-align: center;
+  /* background-image: url(Assets/trainfilled.png); */
+  background-image: url("images/thread pg 1.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-section {
+  font-family: "Assistant", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #01c0c1; /* Change to match the color of the section --
+					  PREGAME:
+					  DANCEFLOOR: #647754
+					  FEATURES: #C58181
+					  PHOTO STORY: #668D87
+					  HANGOVER: #01C0C1 */
+}
+
+.article-hed {
+  font-family: miller-banner, sans-serif;
+  font-size: 55px;
+  margin-bottom: 0;
+  line-height: 1.1em;
+  color: white;
+}
+
+.article-dek {
+  font-family: trade-gothic-next, sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  margin-top: 15px;
+  line-height: 1.1em;
+  color: white;
+}
+
+.article-byline {
+  font-family: "Assistant", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.byline-link {
+  color: black;
+  text-decoration: none;
+  color: #3d688e;
+}
+
+.byline-link:hover {
+  color: white;
+  font-weight: 400;
+}
+
+/************* BODY TEXT **************/
+
+.article-body {
+  text-align: left;
+  margin-bottom: 5vh;
+  padding-top: 5px;
+  font-family: "proforma", serif;
+  font-size: 19px;
+  line-height: 1.6em;
+  background-color: black;
+  background-image: url("images/thread pg 2.png");
+  background-position: -140px;
+  padding-bottom: 3vh;
+}
+
+.article-body > p {
+  margin-bottom: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+  color: white;
+}
+
+.cite {
+  margin-bottom: 20px;
+  margin-left: 50%;
+  margin-right: 30%;
+  color: white;
+}
+
+.article-headings {
+  text-align: center;
+  font-family: "miller-banner ", serif;
+  font-size: 45px;
+  font-weight: 600;
+  margin-top: 30px;
+
+  margin-bottom: 30px;
+}
+
+.quotation {
+  color: #3d688e;
+  font-size: 50px;
+}
+
+.storytelling {
+  font-family: miller-banner, serif;
+  color: #ffcd03;
+  font-size: 50px;
+}
+
+/**** DROP CAP - you can change color / font if needed ****/
+
+.drop-cap:first-child:first-letter {
+  color: #ffcd03;
+  font-family: "miller-banner", serif;
+  font-weight: 600;
+  font-size: 55px;
+  float: left;
+  line-height: 48px;
+  margin-top: 10px;
+  padding-right: 8px;
+}
+
+/*********** PULLQUOTE ************/
+
+.pullquote {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.pullquote p {
+  font-size: 32px;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  font-family: trade-gothic-next;
+  font-weight: bold;
+  color: white;
+}
+
+.pullquote cite {
+  font-size: 19px;
+  font-family: trade-gothic-next, sans-serif;
+  color: white;
+}
+
+/************* BUTTONS **************/
+
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 15px;
+}
+.btn:active {
+  transform: scale(1.2);
+}
+.btn-prev {
+  top: 45%;
+  left: 2%;
+  background-image: url("Assets/leftbutton.png");
+  background-size: cover;
+}
+
+.btn-next {
+  top: 45%;
+  right: 2%;
+  background-image: url("Assets/rightbutton.png");
+  background-size: cover;
+}
+
+/************* IMAGES ***************/
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  width: 30vw;
+  align-self: center;
+  box-shadow: 4px 4px 2px #00bae3;
+}
+
+.image1 {
+  position: absolute;
+  top: 80px;
+  right: 100px;
+}
+
+.image2 {
+  position: absolute;
+  top: 2000px;
+  right: 100px;
+}
+
+.image3 {
+  position: absolute;
+  top: 3000px;
+  left: 100px;
+}
+
+.image img {
+  width: 15vw;
+  height: auto;
+}
+
+.image p {
+  font-family: "Assistant", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.image-container {
+  align-self: center;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.dress {
+  position: relative;
+  top: 0;
+  right: 5%;
+  max-width: 30%;
+  max-height: 30%;
+}
+
+.sketch {
+  position: absolute;
+  top: 20%;
+  right: 32%;
+  max-width: 80%;
+  max-height: 80%;
+  z-index: 1;
+}
+/************* DOTS ****************/
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #067191;
+}
+
+/************* CREDITS **************/
+
+hr {
+  margin-left: 38%;
+  margin-right: 38%;
+  margin-top: 5vh;
+}
+
+.article-credits {
+  text-align: center;
+  padding-left: 28%;
+  padding-right: 28%;
+  font-family: "Assistant", sans-serif;
+  text-transform: uppercase;
+  margin-top: 3vh;
+  line-height: 1.2em;
+  color: white;
+}
+
+.credits-heading {
+  font-weight: 700;
+  font-size: 19px;
+  color: #3d688e;
+  font-family: trade-gothic-next, sans-serif;
+}
+
+.credits-subhed {
+  font-weight: 700;
+  font-size: 16px;
+  color: #3d688e;
+}
+
+.credits-item {
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+}
+
+/**** FOOTER NAVIGATION - don't worry about this, I'll add the right links/text for you ****/
+
+.magazine-navigation {
+  display: flex;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 5vh;
+  margin-top: 9vh;
+}
+
+.magazine-navigation a {
+  color: black;
+  text-decoration: none;
+}
+
+.magazine-navigation a:hover {
+  color: #313131;
+}
+
+.magazine-navigation > h2 {
+  width: 50%;
+  font-size: 25px;
+}
+
+.article-link {
+  font-family: "Abril Fatface", cursive;
+  font-size: 25px;
+}
+
+.left {
+  text-align: left;
+  padding-right: 2%;
+}
+
+.right {
+  text-align: right;
+  padding-right: 2%;
+}
+
+.footer-info {
+  font-family: "Assistant", sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.footer-info a {
+  color: black;
+}
+
+.footer-info a:hover {
+  color: #313131;
+}
+
+/************* MOBILE STYLING **************/
+/* add any mobile-specific CSS here but please leave what's here now
+  (unless there's a specific thing that needs to change based on your design)! */
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    height: 5vh;
+  }
+  .article-top-content {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .article-hed {
+    font-size: 3em;
+  }
+  .article-dek {
+    font-size: 1.5em;
+  }
+  .article-byline {
+    font-size: 1em;
+  }
+  .article-body > p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .pullquote {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .pullquote p {
+    font-size: 27px;
+  }
+  .image {
+    margin: 8% 10%;
+  }
+  .image img {
+    width: 80vw;
+  }
+  hr {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .article-credits {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .magazine-navigation {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  /**** ADD MORE BELOW ****/
+}

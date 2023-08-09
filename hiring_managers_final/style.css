@@ -1,0 +1,471 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/************* NAV BAR **************/
+
+.nav-bar {
+  z-index: 1000;
+  background-color: transparent;
+  padding: 17px 10px 50px 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1vh;
+  transition-duration: 1s;
+}
+
+.logo {
+  display: inline;
+  align-items: center;
+  position: relative;
+}
+
+.logo-image {
+  grid-area: content;
+  float: left;
+  background-color: transparent;
+}
+
+.nav-bar a {
+  fill: white; /* only change this if nbn nav logo is on a dark background -- if so, change to white */
+  transition-duration: 1s;
+}
+
+.nav-bar a:hover {
+  fill: #ececec; /* only change this if nbn nav logo is on a dark background -- if so, change to #ECECEC */
+  transition-duration: 0s;
+}
+
+/* NAV BAR ON SCROLL */
+
+.nav-bar-scroll {
+  background-color: black;
+  filter: drop-shadow(0 1px 1px rgb(0, 0, 0, 0.5));
+}
+
+/************* HEADER (HED, DEK, BYLINE) **************/
+
+/* .article-top-content {
+  margin-top: 15vh;
+  padding-left: 30%;
+  padding-right: 30%;
+  text-align: center;
+  background-color: black;
+} */
+
+.article-top-content {
+  padding-left: 30%;
+  padding-right: 30%;
+  text-align: center;
+  background-image: url(images/hiringbanner4.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 110vh;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-section {
+  font-family: trade-gothic-next, sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.article-hed {
+  font-family: miller-banner, serif;
+  color: #ed0c84;
+  font-weight: 700;
+  font-size: 55px;
+  margin-bottom: 0;
+  line-height: 1.1em;
+}
+
+.article-dek {
+  font-family: trade-gothic-next, sans-serif;
+  color: black;
+  font-weight: 300;
+  font-size: 25px;
+  margin-top: 15px;
+  line-height: 1.1em;
+}
+
+.article-byline {
+  font-family: trade-gothic-next, sans-serif;
+  color: black;
+  font-weight: 300;
+  font-size: 17px;
+  margin-top: 25px;
+  text-transform: uppercase;
+}
+
+.byline-link {
+  color: black;
+  text-decoration: none;
+}
+
+.byline-link:hover {
+  color: #313131;
+  font-weight: 700;
+}
+
+/************* BODY TEXT **************/
+
+.article-body {
+  text-align: left;
+  margin-bottom: 5vh;
+  font-family: "proforma", serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.6em;
+  background-color: black;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.article-body > p {
+  margin-bottom: 20px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+/**** DROP CAP - you can change color / font if needed ****/
+
+.drop-cap:first-child:first-letter {
+  color: black;
+  font-family: miller-banner, serif;
+  font-weight: 600;
+  font-size: 55px;
+  float: left;
+  line-height: 48px;
+  margin-top: 10px;
+  padding-right: 8px;
+}
+
+/*********** PULLQUOTE ************/
+
+.pullquote {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.pullquote p {
+  font-size: 32px;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  font-family: miller-banner, serif;
+}
+
+.pullquote cite {
+  font-size: 19px;
+  font-family: trade-gothic-next, sans-serif;
+}
+
+/************* IMAGES ***************/
+
+.image {
+  margin: 3% 30%;
+}
+
+.image img {
+  width: 40vw;
+  height: auto;
+}
+
+.image p {
+  font-family: trade-gothic-next, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.image-container {
+  position: relative;
+  margin: auto;
+}
+
+.iso {
+  position: relative;
+  top: 0;
+  left: 25%;
+  right: 25%;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.svb {
+  position: absolute;
+  top: -15%;
+  right: 20%;
+  transform: rotate(15deg);
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.cabo {
+  position: relative;
+  top: 0;
+  left: 33%;
+  transform: rotate(-15deg);
+  max-width: 20%;
+  max-height: 20%;
+}
+
+.blackstone {
+  position: absolute;
+  top: -5%;
+  right: 32%;
+  transform: rotate(-15deg);
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.cusoon {
+  position: relative;
+  max-width: 50%;
+  max-height: 50%;
+  left: 25%;
+  right: 25%;
+}
+
+/************* CREDITS **************/
+
+hr {
+  margin-left: 38%;
+  margin-right: 38%;
+  margin-top: 5vh;
+}
+
+.article-credits {
+  text-align: center;
+  padding-left: 28%;
+  padding-right: 28%;
+  font-family: trade-gothic-next, sans-serif;
+  text-transform: uppercase;
+  margin-top: 3vh;
+  line-height: 1.2em;
+  color: black;
+}
+
+.credits-heading {
+  font-weight: 700;
+  font-size: 19px;
+  color: white;
+}
+
+.credits-subhed {
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+}
+
+.credits-item {
+  font-weight: 400;
+  font-size: 15px;
+  color: white;
+}
+
+/**** FOOTER NAVIGATION - don't worry about this, I'll add the right links/text for you ****/
+
+.magazine-navigation {
+  display: flex;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 5vh;
+  margin-top: 9vh;
+}
+
+.magazine-navigation a {
+  color: black;
+  text-decoration: none;
+}
+
+.magazine-navigation a:hover {
+  color: #313131;
+}
+
+.magazine-navigation > h2 {
+  width: 50%;
+  font-size: 25px;
+}
+
+.article-link {
+  font-family: miller-banner, serif;
+  font-size: 25px;
+}
+
+.left {
+  text-align: left;
+  padding-right: 2%;
+}
+
+.right {
+  text-align: right;
+  padding-right: 2%;
+}
+
+.footer-info {
+  font-family: trade-gothic-next, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+.footer-info a {
+  color: black;
+}
+
+.footer-info a:hover {
+  color: #313131;
+}
+
+/************* MOBILE STYLING **************/
+/* add any mobile-specific CSS here but please leave what's here now
+(unless there's a specific thing that needs to change based on your design)! */
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    height: 5vh;
+  }
+  .article-top-content {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .article-hed {
+    font-size: 3em;
+  }
+  .article-dek {
+    font-size: 1.5em;
+  }
+  .article-byline {
+    font-size: 1em;
+  }
+  .article-body > p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .pullquote {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .pullquote p {
+    font-size: 27px;
+  }
+  .image {
+    margin: 8% 10%;
+  }
+  .image img {
+    width: 80vw;
+  }
+  hr {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .article-credits {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .magazine-navigation {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  /**** ADD MORE BELOW ****/
+}
+
+/************* LINED PAPER STYLING **************/
+/* Styling specific to a sheet of lined paper */
+.sheet {
+  background-color: black;
+  background: repeating-linear-gradient(
+    white,
+    white 25px,
+    #9198e5 26px,
+    #9198e5 27px
+  );
+  background-position-y: 49px;
+  margin: auto;
+  height: 800px;
+  /* height: 100%; */
+  width: 500px;
+  padding: 0;
+  /* margin-top: 8vh; */
+  margin-bottom: 5vh;
+
+  font-family: "Indie Flower", cursive;
+}
+.sheet header {
+  background-color: white;
+  background: linear-gradient(white, white 48px, #9198e5 49px, #9198e5 50px);
+  height: 50px;
+}
+.sheet-title {
+  position: relative;
+  top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.sheet-text {
+  position: relative;
+  top: 25px;
+  font-size: 22px;
+  width: 480px;
+  margin: 0 55px;
+  line-height: 27px;
+}
+
+.second-sheet-text {
+  position: relative;
+  top: 25px;
+  font-size: 22px;
+  width: 480px;
+  margin: 0 55px;
+  line-height: 27px;
+}
+.margin {
+  width: 49px;
+  height: 100%;
+}
+.l-margin {
+  float: left;
+  border-right: 2px solid pink;
+}
+.r-margin {
+  float: right;
+  border-left: 1px solid pink;
+}
+
+/* Styling for hole punches */
+.l-margin {
+  position: relative;
+}
+.hole {
+  height: 20px;
+  width: 20px;
+  background-color: #555;
+  border-radius: 50%;
+  position: absolute;
+  left: 15px;
+}
+.first-hole {
+  top: 30px;
+}
+.second-hole {
+  top: 50%;
+}
+.third-hole {
+  bottom: 30px;
+}

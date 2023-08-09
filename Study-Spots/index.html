@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS/OTHER STYLESHEETS (feel free to add more below) -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Leaflet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <!-- FONTS (feel free to add more below) -->
+    <link
+      href="<link"
+      rel="stylesheet"
+      href="https://use.typekit.net/aob6hcw.css"
+      rel="stylesheet"
+    />
+    <!-- TITLE (replace with article hed) -->
+    <title>Study IN THE CITY</title>
+  </head>
+
+  <body>
+    <!-- NAV BAR - please don't touch! -->
+    <nav class="nav-bar" id="example">
+      <div class="logo logo-image">
+        <svg version="1.1" width="42" height="42" viewBox="0 0 440 440">
+          <a xlink:title="Digital Mag Homepage" xlink:href="index.html#target">
+            <path
+              d="M347.5,40.7l34.4,66h-25v244.5l-43.1,0.2c0,0-0.8,0.4-2.6-3.8c-1.7-4.2-72.3-163.3-72.3-163.3s-1.3-2.6-1.8-2.7
+                        c0,2-0.2,170-0.2,170l-45.8-0.3V106.7l61.1,0.1c0,0,2,0,3.4,2.4c1.3,2.4,54,122.2,54,122.2s1.9,4.5,2.8,4.1c0-1.8,0-128.7,0-128.7
+                        h-23l40.4-77.4C297.4,10.7,260,0,220,0C98.5,0,0,98.5,0,220s98.5,220,220,220s220-98.5,220-220C440,146,403.5,80.6,347.5,40.7z"
+            />
+          </a>
+        </svg>
+      </div>
+    </nav>
+
+    <header class="article-top-content" id="example">
+      <div class="header-text">
+        <h3 class="article-section">Pregame</h3>
+        <h1 class="article-hed">
+          <span
+            style="
+              color: #067191;
+              font-size: 90px;
+              font-family: 'miller-banner', serif;
+            "
+            >Study</span
+          >
+          IN THE CITY
+        </h1>
+        <h2 class="article-dek">
+          Take a break from the library and discover some of Chicago’s hidden
+          gems.
+        </h2>
+        <h3 class="article-byline">
+          By <a class="byline-link" href="" target="_blank">Jimmy He</a>
+        </h3>
+      </div>
+    </header>
+
+    <article class="article-body">
+      <p class="drop-cap">
+        It’s easy to get burnt out from Northwestern’s strenuous cycle of
+        revolving midterms, especially if you’ve exhausted your share of
+        productive Evanston study spots to stay laser-focused. Tired of fighting
+        for a seat at Colectivo or Sherbucks? Bored with the monotony of campus
+        libraries? Look no further than this snippet of Chicago’s study network
+        to spice up your next academic grind session!
+      </p>
+      <div class="map-container">
+        <div class="slideshow-container">
+          <div class="spot">
+            <h2 class="location-name">Heritage Outpost ($)</h2>
+            <h3 class="location-address">
+              1 Lobby, 1020 W Lawrence Ave, Chicago, IL 60640
+            </h3>
+            <img
+              src="./images/heritageoutpost.jpg"
+              alt="Heritage Outpost"
+              class="image"
+            />
+            <p class="location-directions">
+              <i> Directions (6.5 miles from the Arch): </i>
+            </p>
+            <p class="location-navigation">
+              <b>CTA:</b> eight-minute walk from red line Argyle stop
+            </p>
+            <p class="location-description">
+              Located on the first floor of an apartment complex, Heritage
+              Outpost is an affordable café adjacent to an expansive lobby of
+              comfortable armchairs, lush leather couches and a wall of collaged
+              photographs in mismatched frames. Grab a coffee and pick a seat
+              beneath the geometric-tiled ceiling to catch up on some work or
+              simply people-watch.
+            </p>
+          </div>
+
+          <div class="spot">
+            <h2 class="location-name">Edie's All Day Cafe & Bar ($$)</h2>
+            <h3 class="location-address">675 N Wells St, Chicago, IL 60654</h3>
+            <img
+              src="./images/edie_s_cafe.jpg"
+              alt="Edie's All Day Cafe & Bar"
+              class="image"
+            />
+            <p class="location-directions">
+              <i> Directions (11 miles from the Arch): </i>
+            </p>
+            <p class="location-navigation">
+              <b>Intercampus:</b> 19-minute walk from Ward stop
+            </p>
+            <p class="location-navigation">
+              <b>CTA:</b> 10-minute walk from red line Chicago stop
+            </p>
+            <p class="location-description">
+              Edie’s bustling atmosphere is perfect for solo adventures and cute
+              study dates. Despite a relatively higher price tag, Edie’s
+              extensive coffee, pastry and brunch menu is worth the occasional
+              splurge. Kick back with a colorful specialty latte — like charcoal
+              or lavender — and headphones to tune out the Chicagoan chatter as
+              you hit the books. If you’re exhausted after an especially hard
+              day’s work, treat yourself to a drink at Edie’s bar!
+            </p>
+          </div>
+
+          <div class="spot">
+            <h2 class="location-name">Poetry Foundation (FREE)</h2>
+            <h3 class="location-address">
+              61 W Superior St, Chicago, IL 60654
+            </h3>
+            <img
+              src="./images/poetryfoundation.jpg"
+              alt="Poetry Foundation"
+              class="image"
+            />
+            <p class="location-directions">
+              <i> Directions (12 miles from the Arch): </i>
+            </p>
+            <p class="location-navigation">
+              <b>Intercampus: </b>13-minute walk from Ward stop
+            </p>
+            <p class="location-navigation">
+              <b> CTA: </b>four-minute walkfrom red line Chicago stop
+            </p>
+            <p class="location-description">
+              Home to a 30,000-volume poetry library, the walls surrounding the
+              Poetry Foundation’s seating area are crowded with colorful
+              anthologies. An outdoor foyer encloses the literary society’s
+              entrance, reducing noise and creating a sense of intimacy. Take a
+              study break to browse the shelves or survey the artwork on display
+              in the foundation’s exhibition gallery.
+            </p>
+          </div>
+
+          <div class="spot">
+            <h2 class="location-name">Harold Washington Library (FREE)</h2>
+            <h3 class="location-address">400 S State St, Chicago, IL 60605</h3>
+            <img
+              src="./images/haroldlibrary.jpg"
+              alt="Harold Washington Library"
+              class="image"
+            />
+            <p class="location-directions">
+              <i> Directions (12 miles from the Arch): </i>
+            </p>
+            <p class="location-navigation">
+              <b>CTA:</b> two-minute walk from red line Jackson stop
+            </p>
+            <p class="location-description">
+              Harold Washington Library Center’s elusive winter garden is an
+              oasis tucked away on the building’s ninth floor. Potted trees,
+              plants and ivy-covered walls juxtapose hanging chandelier fixtures
+              to create a cozy outdoor-esque scenery. The seating on this
+              particular library floor is sparse, but grab a table if you can
+              and soak up the natural light from the glass ceiling.
+            </p>
+          </div>
+
+          <div class="spot">
+            <h2 class="location-name">
+              Chinatown Branch, Chicago Public Library (FREE)
+            </h2>
+            <h3 class="location-address">
+              2100 S Wentworth Ave, Chicago, IL 60616
+            </h3>
+            <img
+              src="./images/chinatownlibrary.jpg"
+              alt="Chinatown Branch, Chicago Public Library"
+              class="image"
+            />
+            <p class="location-directions">
+              <i> Directions (14 miles from the Arch): </i>
+            </p>
+            <p class="location-navigation">
+              <b>CTA:</b> two-minute walk from red line Cermak-Chinatown stop
+            </p>
+            <p class="location-description">
+              Chinatown’s branch of the Chicago Public Library is a modern,
+              open-concept gem well worth the hike from Northwestern. Rows of
+              white bookshelves provide privacy for tables accented with bright
+              orange chairs and benches. Minutes away from Chinatown
+              restaurants, look out the glass-paneled exterior to ponder your
+              post-study lunch spot.
+            </p>
+          </div>
+
+          <!-- Control buttons -->
+          <button
+            class="btn btn-next"
+            id="right-button"
+            onclick="plusSlides(1)"
+          ></button>
+          <button
+            class="btn btn-prev"
+            id="left-button"
+            onclick="plusSlides(-1)"
+          ></button>
+        </div>
+        <div id="map"></div>
+      </div>
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+
+      <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""
+      ></script>
+
+      <hr />
+
+      <div class="article-credits">
+        <h2 class="credits-heading">Credits</h2>
+        <h3 class="credits-subhed">
+          Writing <span class="credits-item">Jimmy He</span>
+        </h3>
+        <h3 class="credits-subhed">
+          Editing <span class="credits-item">Sam Lebeck</span>
+        </h3>
+        <h3 class="credits-subhed">
+          Photos <span class="credits-item">Jimmy He</span>
+        </h3>
+        <h3 class="credits-subhed">
+          Print Design <span class="credits-item">Grace Chang</span>
+        </h3>
+        <h3 class="credits-subhed">
+          Web Design & Development <span class="credits-item">Manu Deva</span>
+        </h3>
+      </div>
+
+      <!-- JS STYLESHEETS (feel free to add more below) -->
+      <script src="main.js"></script>
+    </article>
+
+    <footer>
+      <div class="magazine-navigation">
+        <h2 class="article-link left"><a href="">&lt; Previous article</a></h2>
+        <h2 class="article-link right"><a href="">Next article &gt;</a></h2>
+      </div>
+
+      <h4 class="footer-info">
+        © 2022 <em>North by Northwestern</em> |
+        <a href="https://northbynorthwestern.com/">northbynorthwestern.com</a>
+      </h4>
+    </footer>
+  </body>
+</html>
